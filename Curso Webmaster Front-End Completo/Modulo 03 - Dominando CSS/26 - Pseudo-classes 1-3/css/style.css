@@ -1,0 +1,63 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+.teste,.teste1,.teste2{
+	width: 300px;
+	margin-top: 30px;
+	height: 30px;
+	margin-left: 30px;
+	/*
+	background-color: #ccc;
+	*/
+	display: inline-block;
+}
+
+.teste1{
+	background-color: rgb(98,98,98);
+}
+
+.teste2{
+	background-color: rgb(50,50,50);
+}
+
+/*
+
+.teste:focus{
+	background-color: red;
+}
+
+PARA FOCAR O ELEMENTO DO FORMULARIO 
+
+.textearea1{
+	display: block;
+	width: 600px;
+	height: 400px;
+}
+
+*/
+
+/*
+
+QUANDO ESTAMOS COM O MOUSE PRECIONADO NO ITEM
+
+.teste1:active{
+	background-color: black;
+}
+*/
+
+/*
+
+QUANDO PASSAMOS COM O MOUSE POR CIMA DO ITEM 
+
+.teste:hover{
+	height: 500px;
+	background-color: blue;
+}
+*/
+

@@ -1,0 +1,67 @@
+*{
+	magin: 0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+a{
+	text-decoration: none;
+}
+
+/*PEGA TODOS OS LINKS QUE TENHA HREF*/
+/*
+a[href="http://www.google.com"]{
+	background-color: yellow;
+}
+
+[href="http://www.google.com"]{
+	background-color: red;
+}
+*/
+
+/*
+ATAQUE COM * TODOS OS LINKS QUE TENHA A PALAVRA ESPEFICICADA*
+
+a[attr*="google"]{
+	background-color: red;
+}
+*/
+ 
+/*
+ATAQUE APENAS O LINK QUE ESTIVER COM O NOME DEFINIDO
+
+a[attr~="google"]{
+	background-color: blue;
+}
+*/
+
+/*
+
+ATAQUE OS LINKS QUE COMECEM COM A PALAVRA DEFINIDA
+
+a[attr^="goo"]{
+	background-color: red;
+}
+*/
+
+/*
+
+UTILIZADO PARA QUANDO TERMINANADO COM A PALABRA
+
+a[attr$="google"]{
+	background-color: red;
+}
+
+*/
+
+input.text[type=text]{
+	background-color: green;
+}
+
+input[type=submit]{
+	background-color: yellow;
+	font-size: 25px;
+}

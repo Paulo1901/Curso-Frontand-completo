@@ -1,0 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.artigo{
+	padding: ;
+	width: 1280px;
+	margin: 40px auto;
+	text-align: center;
+	background-color: rgb(164, 235, 191);
+}
+
+.artigo h1{
+	color: #069;
+	font-size: 23px;
+	font-family: 'tahoma';
+	font-style: normal;
+	font-weight: normal;/*Por padrão ja é bold*/
+}
+
+.artigo p{
+	text-align: left;
+	color: gray;
+	font-size: 19px;
+	font-family: 'tahoma';
+	font-weight: bold;
+	margin-top: 13px;
+	line-height: 30px;/*ESPAÇAMENTO ENTRE AS LINHAS DO TEXTO*/
+}

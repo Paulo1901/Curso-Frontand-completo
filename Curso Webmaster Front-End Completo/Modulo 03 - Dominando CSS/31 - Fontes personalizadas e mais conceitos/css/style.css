@@ -1,0 +1,39 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+	font-family: tahoma;
+}
+
+form *{
+	font-family: 'arial';
+}
+
+/*Chamando fontes localmente
+@font-face{
+	font-family: "minha fonte";
+	src:url(../fonts/Mingzat-Regular.ttf);
+
+
+h2{
+	font-family: "minha fonte";
+}
+*/
+
+/*.box p{
+	font-size: 25px;
+	font-family: tahoma;
+}*/
+
+
+/*
+
+QUANDO USAMOS IMPORTANTE O NIVEL DE ESPECIFICAÇÃO É IGNORADO
+
+.text{
+	font-family: aria !important;
+}
+*/

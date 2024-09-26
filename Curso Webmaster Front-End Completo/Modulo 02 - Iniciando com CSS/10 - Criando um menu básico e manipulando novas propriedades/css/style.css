@@ -1,0 +1,29 @@
+/*RESETANDO O DOCUMENTO*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*ESTILIZANDO O MENU*/
+.menu{
+	width: 900px;
+	background-color: green;
+	text-align: center;/*ALINHAMENTO DE TEXTO*/
+	margin: 40px auto;/*ESPAÇAMENTO EXTERNO*/
+	/*
+	ESPAÇAMENTO EXTERNOS
+	padding-left: 40px;
+	padding-top: 40px;
+	padding-right: 40px;
+	padding-bottom: 40px;
+	*/
+}
+
+.menu a{
+	border: 1px solid red;
+	font-size: 20px;
+	margin: 0 10px;
+	text-decoration: none;
+	color: white;
+}
+

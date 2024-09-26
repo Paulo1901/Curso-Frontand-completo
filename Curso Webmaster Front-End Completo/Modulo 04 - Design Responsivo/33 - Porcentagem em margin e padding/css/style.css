@@ -1,0 +1,23 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body{
+	height: 100%
+}
+
+.pai{
+	width: 50%;
+	height: 400px;
+	background-color: orange;
+}
+
+.box{
+	display: inline-block;
+	width: 50%;
+	margin-left: 50%;
+	padding-top: 25%;
+	background-color: gray;
+}
