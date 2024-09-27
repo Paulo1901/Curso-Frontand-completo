@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hrml, body{
+    height: 100%;
+}
+
+.parent{
+    display: flex;
+}
+
+.sidebar{
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    background-color: blueviolet;
+}
+
+.sidebar-pos{
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+}
+
+.img img{
+    width: 70%;
+    border-radius: 50%;
+    border: 8px solid #955acc;
+    margin: 5% 10%;
+}
+
+.menu{
+    margin: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+.menu a{
+    color: white;
+    opacity: 0.4;
+    font-size: 19px;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.menu a.selected{
+   opacity: 1;
+}
+
+.content{
+    position: absolute;
+    left: 20%;
+    width: 80%;
+    height: 100%;
+    overflow: auto;
+    padding: 0 3%;
+}
+
+section.descricao{
+    position: relative;
+    top: 50%;
+    transform: translatey(-50%);
+}
+
+section.descricao h2{
+    color: #343a40;
+    font-size: 46px;   
+}
+
+section.descricao h2 > span, section.descricao h3 > span{
+    color: blueviolet;
+}
+
+section.descricao h3{
+    margin: 15px 0;
+    font-size: 20px;
+    color: #6c757d;
+}
+
+section.descricao p{
+    color: #6c757d;
+    font-size: 20px;
+    margin-top: 40px
+}
+
+.icons{
+    margin-top: 20px;
+}
+
+.icons a > img{
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 0 10px;
+}
