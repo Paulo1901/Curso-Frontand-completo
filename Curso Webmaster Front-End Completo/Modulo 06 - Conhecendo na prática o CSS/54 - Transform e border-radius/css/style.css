@@ -1,0 +1,68 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+/*Border-radius*/
+
+.box {
+    width: 30%;
+    padding-top: 30%;
+    margin: 50px auto;
+    position: relative;
+    /* border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px; */
+}
+
+.teste {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: black;
+}
+
+/*Propriedade transform*/
+
+.transform {
+    transform:translate(-50%,-50%);
+    width: 40%;
+    max-width: 500px;
+    height: 600px;
+    border: 3px solid #ccc;
+    border-radius: 8px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: 2s;
+    animation-name: animacao;
+    animation-duration: 3s;
+}
+
+@keyframes animacao {
+    0% {
+        transform: translate(-50%,-50%) rotateY(0deg);
+    }
+    50% {
+        transform: translate(-50%,-50%) rotateY(180deg);
+    }
+    100% {
+        transform: translate(-50%,-50%) rotateY(0deg);
+    }
+}
+
+/* 
+Efeito de rotação dos elementos com 3D
+.transform:hover {
+   transform:translate(-50%,-50%) rotate(45deg) scalex(2) scaley(1.5);
+   transform: translate(-50%, -50%) rotatey(180deg);
+} */
