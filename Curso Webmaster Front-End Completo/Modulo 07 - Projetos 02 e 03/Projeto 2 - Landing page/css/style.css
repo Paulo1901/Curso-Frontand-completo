@@ -48,19 +48,6 @@ header {
     /* background-color: green; */
 }
 
-@media screen and (max-width: 510px){
-    
-    header{
-        text-align: center;
-    }
-    
-    [class="logo"]{
-        margin-top: 10px;
-        display: inline-block;
-        float: none;
-    }
-}
-
 section.cover-form {
     width: 100%;
 }
@@ -159,6 +146,56 @@ section.chamada p {
     font-weight: normal;
 }
 
+.flex-mosaico{
+	display: flex;
+}
+
+.item-1-mosaico{
+	background-position: center;
+	background-size: cover;
+	width: 60%;
+}
+
+.item-2-mosaico{
+    background-color: #4683AB;
+    padding:60px 40px;
+	width: 40%;
+}
+
+.item-2-mosaico p {
+    color: #ffffff;
+}
+
+footer{
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin-top: 8px;
+}
+
+footer img {
+    width: 120px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .flex-mosaico {
+        display: block;
+    }
+
+    .item-1-mosaico {
+        padding-top: 80%;
+        width: 100%;
+    }
+
+    .item-2-mosaico {
+        text-align: justify;
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 960px) {
     .bg{
         height: auto;
@@ -172,5 +209,18 @@ section.chamada p {
         max-width: 400px;
         position: static;
         display: inline-block;
+    }
+}
+
+@media screen and (max-width: 510px){
+    
+    header{
+        text-align: center;
+    }
+    
+    [class="logo"]{
+        margin-top: 10px;
+        display: inline-block;
+        float: none;
     }
 }
