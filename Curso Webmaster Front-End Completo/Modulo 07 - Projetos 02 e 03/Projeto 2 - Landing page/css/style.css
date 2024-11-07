@@ -12,7 +12,7 @@ html, body {
 /*Divis gerais*/
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
@@ -21,8 +21,8 @@ html, body {
 }
 
 header {
-    background-color: rgb(180,180,180);
-    padding: 10px 2% 40px 2%;
+    background-color: rgb(220,220,220);
+    padding: 10px 2% 25px 2%;
 }
 
 .logo-1 {
@@ -120,6 +120,18 @@ section.chamada {
     text-align: center;
     width: 100%;
 }
+
+/* .seta {
+    position: absolute;
+    left: 50%;
+    top: -32px;
+    transform:translateX(-50%);
+    -ms-transform: translateX(-50%);
+    width: 64px;
+    height: 64px;
+    background-size: 100% 100%;
+    background-image: url(../images/arrow.png);
+} */
 
 section.chamada .container {
     background-color: #29526d;
