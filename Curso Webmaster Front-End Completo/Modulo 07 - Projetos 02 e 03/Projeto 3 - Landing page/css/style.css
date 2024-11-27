@@ -12,6 +12,7 @@ header {
     height: 90vh;
     /*max-height: 700px;*/
     padding: 40px 2%;
+    min-height: 800px;
     background-size: cover;
     background-position: center;
     background-image: url(../imagens/capa.png);
@@ -26,7 +27,43 @@ header .logo {
 }
 
 nav.mobile-menu {
+    cursor: pointer;
     display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url(../imagens/menu.png);
+    background-size: 100% 100%;
+}
+
+nav.mobile-menu:hover ul{
+    opacity: 1;
+}
+
+nav.mobile-menu ul {
+    opacity: 0;
+    transition: 1s;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav.mobile-menu ul li{
+    padding: 8px 0;
+    transition: 0.4s;
+    border-bottom: 1px solid black;
+}
+
+nav.mobile-menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav.mobile-menu ul li:hover{
+    background-color: rgb(230, 230, 230);
 }
 
 header nav {
@@ -76,6 +113,33 @@ section.sessao1 .container {
     max-width: 1000px;
 }
 
+.sessao2 {
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: white;
+    text-align: center;
+}
+
+.sessao2 h2{
+    color: #472663;
+    font-weight: 300;
+}
+
+.sessao2 p{
+    margin-top: 30px;
+    max-width: 900px;
+    display: inline-block;
+}
+
+.sessao2 img{
+    width: 100%;
+    margin-top: 40px;
+}
+
+.sessao2 .container{
+    max-width: 1000px;
+}
+
 .texto-sessao1 {
     float: left;
     width: 50%;
@@ -98,8 +162,8 @@ section.sessao1 .container {
 
 .texto-sessao1 ul {
     font-size: 15px;
-    list-style-position: inside;
-
+    list-style-position: outside;
+    padding-left: 15px;
 }
 
 .texto-sessao1 ul li{
@@ -132,6 +196,30 @@ section.sessao1 .container {
     background-size: 100% 100%;
 }
 
+@media screen and (max-widt: 830px){
+    .chamada1 {
+        max-width: none;
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin: 170px 0;
+    }
+
+    .chamada1 h2{
+        font-size: 30px;
+        font-weight: 300;
+        padding: 0 10px;
+        color: white;
+    }
+
+    .container p {
+        font-size: 15px;
+        color: white;
+        margin-top: 10px;
+    }
+
+}
+
 @media screen and (max-width: 768px){
 
     header {
@@ -147,27 +235,6 @@ section.sessao1 .container {
 
     nav.mobile-menu {
         display: block;
-    }
-
-    .chamada1 {
-        max-width: none;
-        width: 100%;
-        text-align: center;
-        float: none;
-        margin: 100px 0;
-    }
-
-    .chamada1 h2{
-        font-size: 30px;
-        font-weight: 300;
-        padding: 0 10px;
-        color: white;
-    }
-
-    .container p {
-        font-size: 15px;
-        color: white;
-        margin-top: 10px;
     }
 
     section.sessao1 {
@@ -201,5 +268,9 @@ section.sessao1 .container {
 
     .btn1-texto {
         display: inline-block;
+    }
+
+    .sessao2 {
+        padding: 40px 2%;
     }
 }
