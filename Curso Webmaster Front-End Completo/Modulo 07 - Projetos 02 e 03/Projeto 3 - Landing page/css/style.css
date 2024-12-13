@@ -176,7 +176,7 @@ section.sessao1 .container {
 .wraper-part1 {
     max-width: 600px;
     float: right;
-    padding-right: 30px;
+    padding:0 30px;
 }
 
 .texto-sessao1 {
@@ -272,12 +272,12 @@ section.sessao1 .container {
 
 .titulo-autor .img-autor{
     float: left;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     position: relative;
     top: -4px;
-    background-color: green;
-    border-radius: 20px;
+    background-color: #ccc;
+    border-radius: 25px;
 }
 
 .texto-autor p{
@@ -301,6 +301,109 @@ section.sessao1 .container {
     cursor: pointer;
     background-color: rgb(200, 200, 200);
 }
+
+/*Aqui estou começando uma sessao4*/
+
+section.sessao4 {
+    background-color: #472563;
+    padding: 100px 0;
+
+}
+
+.form {
+    float: left;
+    width: 40%;
+    color: white;
+    padding-left: 10px;
+}
+
+.form h2{
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.form p{
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+    max-width: 400px;
+    padding-right: 10px;
+}
+
+.form form {
+    margin-top: 15px;
+}
+
+.form form input[type=text]{
+    width: 90%;
+    max-width: 400px;
+    margin-top: 5px;
+    height: 58px;
+    padding-left: 8px;
+    line-height: 58px;
+    border: 1px solid rgb(200, 200, 2000);
+}
+
+.form form textarea{
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    border: 1px solid rgb(200, 200, 2000);
+    height: 160px;
+    margin-top: 8px;
+}
+
+.form form input[type=submit]{
+    border: 0;
+    background-color: #ff703d;
+    width: 165px;
+    height: 44px;
+    font-size: 13px;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 30px;
+}
+
+.map-wraper{
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+    color: white;
+}
+
+.map-wraper h2{
+    margin-bottom: 10px;
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.map-wraper3{
+    margin-top: 10px;
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+}
+
+.map-wraper2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 100%;
+}
+
+.map{
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 5px solid rgb(200, 200, 200);
+}
+
+/*Termino da sessao4*/
 
 @media screen and (max-widt: 830px){
     .chamada1 {
@@ -376,7 +479,63 @@ section.sessao1 .container {
         display: inline-block;
     }
 
+    section.sessao4 .container{
+        text-align: center;
+    }
+
+    .form p{
+        display: inline-block;
+    }
+
+    .form{
+        float: none;
+        width: 100%;
+    }
+
     .sessao2 {
+        float: none;
         padding: 40px 2%;
+    }
+
+    .map-wraper{
+        float: none;
+        width: 100%;
+        padding: 0 4%;
+        margin-top: 40px;
+    }
+
+    .map-wraper3{
+        margin-top: 10px;
+        width: 80%;
+        padding-top: 80%;
+        display: inline-block;
+        max-width: none;
+        position: relative;
+    }
+    
+    .map-wraper2{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .part1 {
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .part2{
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .sessao2 img{
+        top: 70px;
+        margin-top: 20px;
     }
 }
