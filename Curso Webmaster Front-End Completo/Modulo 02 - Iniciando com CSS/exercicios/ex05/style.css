@@ -1,0 +1,7 @@
+h2 {
+    letter-spacing: 2px;
+}
+
+h2:hover {
+    letter-spacing: 20px;
+}
