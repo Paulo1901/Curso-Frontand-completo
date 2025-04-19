@@ -1,0 +1,11 @@
+div {
+    width: 200px;
+    height: 200px;
+    border: solid 1px black;
+}
+
+div {
+    width: 50%;
+    height: 30px;
+    border: solid 2px red;
+}
